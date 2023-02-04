@@ -1,21 +1,18 @@
-import './App.css';
+import ControlPanel from "./Chapters/ControlPanel";
+import ReactComponentWithTypescript from "./Chapters/ReactComponentWithTypescript";
+import PropWithChildren from "./Chapters/PropWithChildren";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Chapter 1 React component with typescript */}
+      <ReactComponentWithTypescript name="Sachin Rawat" />
+
+      {/* Chapter 2 Typing component exercise */}
+      <ControlPanel name="Admin" onChange={(e) => console.log(e)} />
+
+      {/* Chapter 3 Prop with children */}
+      <PropWithChildren />
     </div>
   );
 }
